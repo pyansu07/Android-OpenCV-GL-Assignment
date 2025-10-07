@@ -2,27 +2,29 @@
 
 This project is an Android application that captures a live camera feed, processes it in real-time using OpenCV in C++ to perform edge detection, and renders the output using OpenGL ES. It also includes a minimal TypeScript web viewer to display a sample processed frame.
 
-## [cite_start]Features Implemented [cite: 65]
+## Features Implemented
 
 ### Android Application
 - [x] Live camera feed integration using CameraX.
 - [x] JNI bridge to pass camera frames to native C++ code.
 - [x] Canny Edge Detection implemented in C++ using OpenCV.
 - [x] Real-time rendering of the processed frames using OpenGL ES 2.0.
-- [x] (Optional) Add any bonus features you implemented here, like an FPS counter.
 
 ### Web Viewer
 - [x] Minimal web page built with TypeScript and HTML.
 - [x] Displays a static sample frame processed by the Android app.
 - [x] Shows an overlay with basic frame statistics (resolution, FPS).
 
-## [cite_start]Demo [cite: 67]
+## 🖼️ Screenshots
 
-*(It's highly recommended to record a short GIF of your app working and place it here.)*
+| Raw Preview | Edge Detection View |
+|-------------|----------------------|
+| ![raw](https://github.com/user-attachments/assets/5aee1ba3-f1e2-4306-8571-316eaa9e1f3c) | ![processed](https://github.com/user-attachments/assets/dc7581d7-267c-4d46-8388-e9d4baebb9b0) |
 
-![App Demo](link_to_your_gif_or_screenshot.gif)
+---
 
-## [cite_start]Architecture Overview [cite: 69]
+
+## Architecture Overview
 
 The application follows a simple data flow from camera capture to screen rendering:
 
@@ -34,7 +36,7 @@ The application follows a simple data flow from camera capture to screen renderi
 
 The web component is a separate, static page that demonstrates basic TypeScript usage by displaying a Base64-encoded sample frame.
 
-## [cite_start]Setup and Build Instructions [cite: 68]
+## Setup and Build Instructions
 
 1.  **Prerequisites:**
     * Android Studio (latest version recommended).
